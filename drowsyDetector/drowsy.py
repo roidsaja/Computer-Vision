@@ -57,14 +57,14 @@ while True:
             active = 0
             if(sleep > 6):
                 status = "ASLEEP!"
-                colour = (255,0,0)
+                colour = (0,0,255)
         elif(left_blink == 1 or right_blink == 1):
             sleep = 0
             active = 0
             drowsy += 1
             if(drowsy > 6):
-                status = "A BIT SLEEPY!"
-                colour = (0,0,255)
+                status = "DRIVER IS SLEEPY!"
+                colour = (255,0,0)
         else:
             drowsy = 0
             sleep = 0
