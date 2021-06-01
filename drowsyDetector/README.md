@@ -8,6 +8,7 @@ Essentially this system will utilise feature points (landmarks) on a driver's fa
 # Project Scope
 - Capture video and colour conversion from webcam.
 - Detecting drowsiness from extracting key facial landmarks.
+- Alert back to user with flashing and bright coloured texts.
 
 # Functional Requirements
 Dlib is used as a tool for detecting face landmarks in an image. What these 'landmarks' means is they are essentially just vector points on the face such as the mouth, eyebrows, the eyes and so on that help to distinguish the characteristic of what a face would look like and should have. For this prototype, the 68 landmarks model is used for a more thorough landmark scanning. There is another model respectively called the 5 landmarks model, which is also provided by dlib. The 5 landmarks model only scans for the corners of the eyes and the bottom of the nose. Whereas the 68 landmarks model identifies the following parts of the faces:
@@ -40,3 +41,9 @@ The following describes the hardware that have been fully tested and developed o
 Hoping to be tested on a Raspberry Pi 3/4 with the Camera module and some other buzzer noises attached to the board.
 
 # Result
+
+1. `cd drowsyDetector` - After cloning, move directory
+2. `pip install -r requirement.txt` - Get all the modules setup and installed locally accordingly with the versions listed.
+3. `python3 drowsy.py` - Execute script
+
+NOTE*: The `shape_predictor_68_face_landmarks.dat` may need to be downloaded separately and also specified in the path properly. To download the trained model, just head over to [This link](dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2) and manually download and extract.
