@@ -46,4 +46,4 @@ Hoping to be tested on a Raspberry Pi 3/4 with the Camera module and some other 
 2. `pip install -r requirement.txt` - Get all the modules setup and installed locally accordingly with the versions listed.
 3. `python3 drowsy.py` - Execute script
 
-NOTE*: The `shape_predictor_68_face_landmarks.dat` may need to be downloaded separately and also specified in the path properly. To download the trained model, just head over to [This link](dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2) and manually download and extract.
+NOTE*: The `shape_predictor_68_face_landmarks.dat` may need to be downloaded separately and also specified in the path properly. To download the trained model, just head over to [This link](http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2) and manually download and extract.
