@@ -59,11 +59,11 @@ while True:
 
         # left eye [36:42]
         left_blink = blinked(landmarks[36], landmarks[37], landmarks[38], landmarks[41], landmarks[40], landmarks[39])
-        print("left_blink: ", left_blink)
+        # print("left_blink: ", left_blink)
 
         # right eye [42:48]
         right_blink = blinked(landmarks[42], landmarks[43], landmarks[44], landmarks[47], landmarks[46], landmarks[45])
-        print("right_blink: ", right_blink)
+        # print("right_blink: ", right_blink)
 
         if(left_blink == 0 or right_blink == 0):
             sleep += 1
